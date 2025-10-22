@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="P. Iyanu DIRIWARI — Bioanalytical Chemist & R&D Scientist. Publications, projects, and contact." />
+  <meta property="og:title" content="P. Iyanu DIRIWARI — Portfolio" />
+  <meta property="og:description" content="Bioanalytical chemistry • FRET/TR‑FRET/NSET • Diagnostics & spectroscopy." />
+  <meta property="og:type" content="website" />
+  <title>P. Iyanu DIRIWARI — Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <nav class="navbar" aria-label="Primary">
+    <div class="container nav-inner">
+      <div class="logo"><a href="#home">DIRIWARI</a></div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#career">Career</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#publications">Publications</a></li>
+        <li><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <header id="home" class="hero" role="banner">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div id="three-stage" aria-hidden="true"></div>
+    <div class="hero-fx" aria-hidden="true"></div>
+    <div class="hero-content">
+      <h1>P. Iyanu DIRIWARI</h1>
+      <p class="lead">Field Application &amp; R&amp;D Scientist • Bioanalytical Chemist • Spectroscopy &amp; Diagnostics</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#about"><i class="fa-solid fa-compass"></i> Explore my work</a>
+        <a class="btn btn-ghost" href="#contact"><i class="fa-regular fa-paper-plane"></i> Get in touch</a>
+        <a class="btn btn-primary" href="cv.pdf" download><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+        <button id="toggle3d" class="btn toggle-3d" type="button"><i class="fa-brands fa-unity"></i> Enable 3D</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container grid about-grid">
+        <div class="card about-photo"><i class="fa-regular fa-user"></i></div>
+        <div>
+          <h2 class="section-title">About</h2>
+          <p class="section-subtitle">Rouen, Normandie, France</p>
+          <div class="card about-text">
+            Bioanalytical chemist specialising in luminescent nanomaterials, resonance energy transfer (FRET / TR‑FRET / NSET) and diagnostic biosensors. Postdoctoral experience in assay development, PAT‑aligned optical characterisation and validation (IQ/OQ/PQ), following a PhD on resonance energy transfer in optical nanoparticles. Record of peer‑reviewed publications, international presentations and cross‑functional collaboration across nanotechnology, chemistry and biomedical imaging.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="career" class="section">
+      <div class="container">
+        <h2 class="section-title">Career</h2>
+        <p class="section-subtitle">Selected milestones</p>
+        <div class="grid career-grid">
+          <div class="card"><h3>Current</h3><p>Leading optical diagnostics and assay development; mentoring and cross‑lab collaborations.</p></div>
+          <div class="card"><h3>PhD</h3><p>Resonance energy transfer in optical nanoparticles; publications and conference talks.</p></div>
+          <div class="card"><h3>Earlier</h3><p>Research assistant / MSc with focus on analytical chemistry and biosensing.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="grid skills-grid">
+          <div class="card skill"><strong>Research Methodology</strong><small>Quantitative / Qualitative</small><div class="progress"><span style="width:95%"></span></div></div>
+          <div class="card skill"><strong>Academic Writing</strong><small>Publications &amp; Docs</small><div class="progress"><span style="width:90%"></span></div></div>
+          <div class="card skill"><strong>Data Analysis</strong><small>Statistics &amp; Viz</small><div class="progress"><span style="width:88%"></span></div></div>
+          <div class="card skill"><strong>Presentation</strong><small>Conferences</small><div class="progress"><span style="width:92%"></span></div></div>
+          <div class="card skill"><strong>Collaboration</strong><small>Leadership &amp; Mentoring</small><div class="progress"><span style="width:87%"></span></div></div>
+          <div class="card skill"><strong>Technical Tools</strong><small>Optics &amp; Assays</small><div class="progress"><span style="width:85%"></span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="container">
+        <h2 class="section-title">Publications</h2>
+        <div class="controls owner-only">
+          <button id="add-publication" class="btn add-pub"><i class="fa-solid fa-plus"></i> Add publication</button>
+        </div>
+        <div id="pub-list" class="grid">
+          <article class="card pub">
+            <div class="icon"><i class="fa-regular fa-file-lines"></i></div>
+            <div>
+              <h3>Luminescent Terbium Probe for Time‑Resolved FRET and NSET Binding Assays with Quantum Dots and Gold Nanoparticles</h3>
+              <div class="venue">Analysis &amp; Sensing, 2025</div>
+              <p>Time‑gated lanthanide donor enabling sensitive Tb→QD/AuNP assays for binding and kinetics in complex media.</p>
+            </div>
+          </article>
+          <article class="card pub">
+            <div class="icon"><i class="fa-regular fa-file-lines"></i></div>
+            <div>
+              <h3>FRET Materials for Biosensing and Bioimaging</h3>
+              <div class="venue">Chemical Reviews, 2025</div>
+              <p>Comprehensive review of platforms spanning lanthanides, quantum dots, organic dyes and hybrid nanomaterials.</p>
+            </div>
+          </article>
+          <article class="card pub">
+            <div class="icon"><i class="fa-regular fa-file-lines"></i></div>
+            <div>
+              <h3>Enhancing NIR‑II Emission of Gold Nanoclusters via Encapsulation in Small Polymer Nanoparticles</h3>
+              <div class="venue">Advanced Optical Materials, 2023</div>
+              <p>Polymer encapsulation boosts NIR‑II brightness and stability of Au nanocluster probes.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-subtitle">Conferences, thesis defence and presentations</p>
+        <div class="controls owner-only">
+          <button id="upload-photo" class="btn upload"><i class="fa-solid fa-camera"></i> Upload photos</button>
+          <input id="photo-input" type="file" accept="image/*" multiple hidden />
+        </div>
+        <div id="gallery-grid" class="grid gallery-grid">
+          <div class="card placeholder"><i class="fa-regular fa-image"></i><small>Placeholder</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="grid contact-grid">
+          <div class="grid contact-cards">
+            <div class="card"><i class="fa-solid fa-envelope"></i> <strong>Email</strong><br/><a href="mailto:iyanudiriwari@gmail.com">iyanudiriwari@gmail.com</a></div>
+            <div class="card"><i class="fa-solid fa-phone"></i> <strong>Phone</strong><br/>+33 7 54 53 27 15</div>
+            <div class="card"><i class="fa-solid fa-location-dot"></i> <strong>Location</strong><br/>Rouen, Normandie, France</div>
+            <div class="card socials">
+              <a class="btn" href="https://www.linkedin.com/in/pere-diriwari/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+              <a class="btn" href="https://github.com/pdiriwari" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+              <a class="btn" href="https://scholar.google.com/citations?user=tL7F4bUAAAAJ&hl=en" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Scholar</a>
+              <a class="btn" href="https://www.researchgate.net/profile/Peremobowei-Diriwari" target="_blank" rel="noopener"><i class="fab fa-researchgate"></i> ResearchGate</a>
+            </div>
+          </div>
+          <form id="contact-form" class="card" autocomplete="off">
+            <label>Name<input class="input" name="name" required/></label>
+            <label>Email<input class="input" type="email" name="email" required/></label>
+            <label>Subject<input class="input" name="subject"/></label>
+            <label>Message<textarea class="input" rows="5" name="message" required></textarea></label>
+            <button class="btn send"><i class="fa-regular fa-paper-plane"></i> Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> DIRIWARI. Built with passion and dedication.</footer>
+
+  <button id="owner-lock" title="Owner login" class="fab"><i class="fa-solid fa-lock"></i></button>
+  <button id="to-top" aria-label="Back to top" title="Back to top" class="fab"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

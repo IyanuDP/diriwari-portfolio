@@ -1,0 +1,16 @@
+{
+  "name": "diriwari-portfolio",
+  "version": "1.0.0",
+  "description": "Structure: ``` diriwari-portfolio/   index.html   assets/     css/styles.css     js/       main.js       utils.js       nav.js       owner.js       publications.js       gallery.js       contact.js       three-stub.js       backtotop.js   cv.pdf (optional; place your CV here) ``` Owner passphrase hash (SHA-256 of your secret): ``` 68dda963148c57b86f5ae7cf568be3465a45f208d9fb4b14ccf006b44bd73fc0 ``` Dev server (pick one): - Python: `python -m http.server 8080` - Node: `npx http-server -p 8080` Then open http://localhost:8080",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^14.2.5",
+    
+  }
+}

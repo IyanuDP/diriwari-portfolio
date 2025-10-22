@@ -1,0 +1,312 @@
+/* Publications Bookshelf Design */
+.publications-wrapper {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.publications-header {
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.publications-header h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Bookshelf Container */
+.bookshelf-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    background: linear-gradient(to bottom, #8b4513 0%, #654321 100%);
+    border-radius: 12px;
+    padding: 2.5rem 2.5rem 4rem 2.5rem;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    margin-bottom: 3rem;
+}
+
+.shelf-edge {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: linear-gradient(to bottom, #a0522d 0%, #8b4513 100%);
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.shelf-surface {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25px;
+    background: linear-gradient(to bottom, #5d3a1a 0%, #3d2814 100%);
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Decorative Books on Shelf */
+.books-decoration {
+    position: absolute;
+    bottom: 25px;
+    left: 2.5rem;
+    display: flex;
+    gap: 0.5rem;
+    z-index: 1;
+}
+
+.book {
+    width: 40px;
+    height: 60px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.book::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.book-1 { background: linear-gradient(to right, #c0392b, #e74c3c); transform: rotate(-2deg); }
+.book-2 { background: linear-gradient(to right, #16a085, #1abc9c); transform: rotate(1deg); }
+.book-3 { background: linear-gradient(to right, #2980b9, #3498db); transform: rotate(-1deg); }
+.book-4 { background: linear-gradient(to right, #8e44ad, #9b59b6); transform: rotate(2deg); }
+.book-5 { background: linear-gradient(to right, #f39c12, #f1c40f); transform: rotate(-1deg); }
+
+/* Publications Table */
+.publications-table-wrapper {
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.publications-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.publications-table thead {
+    background: linear-gradient(to bottom, #34495e 0%, #2c3e50 100%);
+    color: white;
+}
+
+.publications-table thead th {
+    padding: 1.2rem;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.publications-table thead th:last-child {
+    border-right: none;
+}
+
+.publications-table tbody tr {
+    border-bottom: 1px solid #ecf0f1;
+    transition: all 0.3s ease;
+}
+
+.publications-table tbody tr:hover {
+    background: linear-gradient(to right, #f8f9fa 0%, #e8f4f8 100%);
+    transform: translateX(5px);
+    box-shadow: -5px 0 15px rgba(102, 126, 234, 0.2);
+}
+
+.publications-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.publications-table tbody td {
+    padding: 1.2rem;
+    color: #2c3e50;
+    vertical-align: top;
+}
+
+.pub-title {
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.pub-title-link {
+    color: #2980b9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.pub-title-link:hover {
+    color: #764ba2;
+}
+
+.pub-doi {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+}
+
+.pub-doi a {
+    color: #555;
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+.pub-title {
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.pub-title-link {
+    color: #2980b9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.pub-title-link:hover {
+    color: #764ba2;
+}
+
+.pub-doi {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+}
+
+.pub-doi a {
+    color: #555;
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+.doi-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.3rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    font-size: 0.9rem;
+}
+
+.doi-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.doi-link::before {
+    content: "📄";
+    font-size: 1.2rem;
+}
+
+/* Stats Summary */
+.publications-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #555;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .publications-table-wrapper {
+        overflow-x: auto;
+    }
+    
+    .publications-table {
+        min-width: 1000px;
+    }
+}
+
+@media (max-width: 768px) {
+    .publications-wrapper {
+        padding: 2rem 1rem;
+    }
+
+    .publications-header h2 {
+        font-size: 2rem;
+    }
+
+    .bookshelf-container {
+        padding: 1.5rem 1rem 3rem 1rem;
+    }
+
+    .publications-table thead th,
+    .publications-table tbody td {
+        padding: 0.8rem 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .pub-title {
+        font-size: 0.95rem;
+    }
+
+    .doi-link {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .books-decoration {
+        display: none;
+    }
+
+    .publications-stats {
+        gap: 1rem;
+    }
+
+    .stat-card {
+        padding: 1.5rem 2rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+}

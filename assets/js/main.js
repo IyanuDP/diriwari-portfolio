@@ -1,0 +1,10 @@
+import './utils.js';
+import './nav.js';
+import './owner.js';
+import './publications.js';
+import './gallery.js';
+import './contact.js';
+import './backtotop.js';
+import './cv-data.js';
+import './career.js';
+import './dropdown.js';
